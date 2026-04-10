@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "hRnniKVKyDuyFcDDLZjyI"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-hero.png"
+type = "image"
+title = "Industrial waste collection hero"
+
+[[generated]]
+id = "fQkr9-QnZZPoKGnIpIZYN"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-service.png"
+type = "image"
+title = "Professional waste loading service"
+
+[[generated]]
+id = "34WOlPKngoNjkz1F_xM9g"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-recycling.png"
+type = "image"
+title = "Modern recycling facility"
