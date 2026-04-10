@@ -48,8 +48,8 @@ export function LandingPage() {
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center pt-24 overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent z-10" />
-          <div className="absolute inset-0 bg-background/40 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/10 z-10" />
+          <div className="absolute inset-0 bg-black/20 z-10" />
           <img 
             src="/__mockup/images/surrey-hero.png" 
             alt="Surrey Waste Collection Vehicle" 

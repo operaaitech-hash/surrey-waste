@@ -35,70 +35,70 @@
 
 /* 
   Surrey Waste Theme
-  Industrial Dark mode by default for authoritative, premium tradesperson feel.
-  Primary color: Safety Amber / Orange (#FF6B00 / 25 100% 50%)
-  Background: Deep Slate (#0F1115 / 220 17% 7%)
+  Clean white & green — professional, environmental, trustworthy.
+  Primary color: Forest Green (#16a34a / 142 76% 36%)
+  Background: Pure White
 */
 :root {
-  --background: 220 17% 7%;
-  --foreground: 0 0% 98%;
+  --background: 0 0% 100%;
+  --foreground: 220 15% 12%;
   
-  --card: 220 17% 9%;
-  --card-foreground: 0 0% 98%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 12%;
   
-  --popover: 220 17% 9%;
-  --popover-foreground: 0 0% 98%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 12%;
   
-  --primary: 25 100% 50%;
+  --primary: 142 76% 33%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 220 17% 15%;
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 142 30% 96%;
+  --secondary-foreground: 220 15% 12%;
   
-  --muted: 220 17% 15%;
-  --muted-foreground: 220 10% 65%;
+  --muted: 142 20% 95%;
+  --muted-foreground: 220 10% 45%;
   
-  --accent: 25 100% 50%;
+  --accent: 142 76% 33%;
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
   
-  --border: 220 17% 15%;
-  --input: 220 17% 15%;
-  --ring: 25 100% 50%;
+  --border: 142 15% 88%;
+  --input: 142 15% 88%;
+  --ring: 142 76% 33%;
   
-  --radius: 0rem; /* Sharp, industrial corners */
+  --radius: 0rem;
 }
 
 .dark {
-  --background: 220 17% 7%;
-  --foreground: 0 0% 98%;
+  --background: 0 0% 100%;
+  --foreground: 220 15% 12%;
   
-  --card: 220 17% 9%;
-  --card-foreground: 0 0% 98%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 12%;
   
-  --popover: 220 17% 9%;
-  --popover-foreground: 0 0% 98%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 12%;
   
-  --primary: 25 100% 50%;
+  --primary: 142 76% 33%;
   --primary-foreground: 0 0% 100%;
   
-  --secondary: 220 17% 15%;
-  --secondary-foreground: 0 0% 98%;
+  --secondary: 142 30% 96%;
+  --secondary-foreground: 220 15% 12%;
   
-  --muted: 220 17% 15%;
-  --muted-foreground: 220 10% 65%;
+  --muted: 142 20% 95%;
+  --muted-foreground: 220 10% 45%;
   
-  --accent: 25 100% 50%;
+  --accent: 142 76% 33%;
   --accent-foreground: 0 0% 100%;
   
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
   
-  --border: 220 17% 15%;
-  --input: 220 17% 15%;
-  --ring: 25 100% 50%;
+  --border: 142 15% 88%;
+  --input: 142 15% 88%;
+  --ring: 142 76% 33%;
 }
 
 @layer base {
