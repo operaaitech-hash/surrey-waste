@@ -102,7 +102,7 @@ export default function LandingPage() {
                 Our click-and-collect waste collection service is specifically designed for trade and commercial customers, including shop refits, refurbishments, and projects in city centres or other hard-to-access locations.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With our service, you simply prepare your waste in advance. Our experienced driver will arrive at your location, load the waste onto our vehicle, and remove it efficiently — allowing you to focus on your work without disruption.
+                With our service, you simply prepare your waste in advance. Our experienced driver will arrive at your location, load the waste onto our vehicle, and remove it efficiently, allowing you to focus on your work without disruption.
               </p>
             </motion.div>
             <motion.div
@@ -155,7 +155,7 @@ export default function LandingPage() {
             <div className="space-y-12">
               {[
                 { step: "01", title: "Book Your Slot", desc: "Use our easy online booking system at www.surreywaste.com. Schedule a collection time that suits your project timeline. No permits required." },
-                { step: "02", title: "Prepare Your Waste", desc: "Gather your materials. No need to load it into a skip — just have it accessible and ready for collection." },
+                { step: "02", title: "Prepare Your Waste", desc: "Gather your materials. No need to load it into a skip. Just have it accessible and ready for collection." },
                 { step: "03", title: "We Load & Remove", desc: "Our experienced driver arrives at your location, efficiently loads the waste onto our vehicle, and leaves the site clear." },
                 { step: "04", title: "Responsible Disposal", desc: "Your waste is transported directly to our recycling facility for processing and disposal in an environmentally compliant manner." }
               ].map((item, i) => (
