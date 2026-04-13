@@ -24,7 +24,6 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-white font-sans overflow-x-hidden">
-
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled ? 'bg-white/90 backdrop-blur-md border-border py-4' : 'bg-transparent border-transparent py-6'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -45,7 +44,6 @@ export default function LandingPage() {
           </Button>
         </div>
       </nav>
-
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center pt-24 overflow-hidden">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
@@ -69,7 +67,7 @@ export default function LandingPage() {
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
                 Commercial & Trade
               </div>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[0.9] tracking-tighter uppercase text-balance mb-6">
+              <h1 className="md:text-7xl lg:text-8xl font-display font-bold tracking-tighter uppercase text-balance mb-6 text-[91px]">
                 No Skip Permits.<br />
                 <span className="text-muted-foreground">No Parking Problems.</span><br />
                 <span className="text-primary">Just Hassle-Free</span><br />
@@ -90,7 +88,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Introduction / Features */}
       <section className="py-24 bg-secondary border-y border-border" id="services">
         <div className="container mx-auto px-6 md:px-12">
@@ -133,7 +130,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Process Section */}
       <section className="py-24 bg-background" id="how-it-works">
         <div className="container mx-auto px-6 md:px-12">
@@ -186,7 +182,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Why Choose Us */}
       <section className="py-24 bg-primary text-white">
         <div className="container mx-auto px-6 md:px-12">
@@ -224,7 +219,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Environment Section */}
       <section className="py-24 bg-background" id="environment">
         <div className="container mx-auto px-6 md:px-12">
@@ -268,7 +262,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Booking Form */}
       <section className="py-24 bg-secondary border-t border-border relative overflow-hidden" id="book">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[100px] pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
@@ -353,7 +346,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-background border-t border-border py-12" id="contact">
         <div className="container mx-auto px-6 md:px-12">
