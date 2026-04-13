@@ -18,3 +18,33 @@ id = "34WOlPKngoNjkz1F_xM9g"
 uri = "file://artifacts/mockup-sandbox/public/images/surrey-recycling.png"
 type = "image"
 title = "Modern recycling facility"
+
+[[generated]]
+id = "Te7p3S8d8nK0nN4KHY8Sm"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-concierge-hero.png"
+type = "image"
+title = "Clean modern architectural entrance"
+
+[[generated]]
+id = "0zfMwP1y28pIVSSZwPQ0d"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-concierge-detail.png"
+type = "image"
+title = "Professional hands holding tablet"
+
+[[generated]]
+id = "Ph0Fg88qXn33rYV2LcC9e"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-materials.png"
+type = "image"
+title = "Modern recycling and material recovery facility"
+
+[[generated]]
+id = "mdOQoV9eADUOYqTe68OEL"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-circular.png"
+type = "image"
+title = "Circular economy natural imagery"
+
+[[generated]]
+id = "ztGjsaoa4lKZZdp-p5kc8"
+uri = "file://artifacts/mockup-sandbox/public/images/surrey-logistics.png"
+type = "image"
+title = "logistics operation"
