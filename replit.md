@@ -16,6 +16,20 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - **API codegen**: Orval (from OpenAPI spec)
 - **Build**: esbuild (CJS bundle)
 
+## Artifacts
+
+### Surrey Waste (`artifacts/surrey-waste`)
+- **Kind**: React + Vite (web)
+- **Preview path**: `/` (root)
+- **Port**: 21527
+- **Description**: Landing page for Surrey Waste — a Click & Collect commercial waste collection service
+- **Sections**: Hero, Services (features), How it Works (4-step), Why Choose Us, Environmental, Booking Form, Footer
+- **Branding**: White background + Forest green (#16a34a / `142 76% 33%` in HSL)
+- **Fonts**: Plus Jakarta Sans (sans-serif)
+- **Images**: `public/images/surrey-hero.png`, `surrey-service.png`, `surrey-recycling.png`
+- **Dependencies**: framer-motion, lucide-react, shadcn/ui (all Radix primitives)
+- **No backend** — presentation-first static landing page
+
 ## Key Commands
 
 - `pnpm run typecheck` — full typecheck across all packages
