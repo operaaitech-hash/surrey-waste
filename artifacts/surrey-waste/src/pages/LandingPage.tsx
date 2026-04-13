@@ -28,9 +28,7 @@ export default function LandingPage() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${isScrolled ? 'bg-white/90 backdrop-blur-md border-border py-4' : 'bg-transparent border-transparent py-6'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary flex items-center justify-center">
-              <span className="font-display font-bold text-white text-sm leading-none tracking-tighter">SW</span>
-            </div>
+            <img src="/images/surrey-logo-mark.png" alt="Surrey Waste Logo" className="w-9 h-9 object-contain" />
             <span className="font-display font-bold text-xl tracking-tight uppercase">Surrey Waste</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
@@ -352,9 +350,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 text-center md:text-left">
             <div className="md:col-span-2">
               <div className="flex items-center justify-center md:justify-start gap-2 mb-6">
-                <div className="w-6 h-6 bg-primary flex items-center justify-center">
-                  <span className="font-display font-bold text-white text-[10px] leading-none tracking-tighter">SW</span>
-                </div>
+                <img src="/images/surrey-logo-mark.png" alt="Surrey Waste Logo" className="w-8 h-8 object-contain" />
                 <span className="font-display font-bold text-lg tracking-tight uppercase">Surrey Waste</span>
               </div>
               <p className="text-muted-foreground max-w-sm mx-auto md:mx-0">

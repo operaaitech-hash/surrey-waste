@@ -1,5 +1,4 @@
 uploads = []
-outputs = []
 
 [[generated]]
 id = "hRnniKVKyDuyFcDDLZjyI"
@@ -48,3 +47,15 @@ id = "ztGjsaoa4lKZZdp-p5kc8"
 uri = "file://artifacts/mockup-sandbox/public/images/surrey-logistics.png"
 type = "image"
 title = "logistics operation"
+
+[[generated]]
+id = "VWEHOhc59atV9M6exSLWW"
+uri = "file://artifacts/surrey-waste/public/images/surrey-logo-mark.png"
+type = "image"
+title = "surrey waste logo mark"
+
+[[outputs]]
+id = "-A7xEWu_Qu_FVlGdBuLuT"
+uri = "file://artifacts/surrey-waste/public/images/surrey-logo-mark.png"
+type = "image"
+title = "Surrey Waste — Logo Mark"
