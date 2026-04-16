@@ -113,10 +113,10 @@ export function LandingPage() {
       <section className="bg-primary text-white py-8 border-y-4 border-emerald-300/30">
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
-            { num: "0", label: "Permits Needed" },
-            { num: "100%", label: "Driver Loads" },
-            { num: "2hr", label: "Response Time" },
-            { num: "0%", label: "Landfill Target" },
+            { num: "No", label: "Skip Permits Required" },
+            { num: "100%", label: "Driver Loads For You" },
+            { num: "2hr", label: "Average Response Time" },
+            { num: "0%", label: "Sent To Landfill" },
           ].map((stat, i) => (
             <div key={i}>
               <div className="font-display font-extrabold text-4xl md:text-5xl">{stat.num}</div>
