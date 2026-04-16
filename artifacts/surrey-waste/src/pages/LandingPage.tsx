@@ -138,22 +138,6 @@ export default function LandingPage() {
         </div>
 
       </section>
-      {/* Stats strip */}
-      <section className="bg-primary text-white py-8 border-y-4 border-emerald-300/30">
-        <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            { num: "No", label: "Skip Permits Required" },
-            { num: "100%", label: "Driver Loads For You" },
-            { num: "2hr", label: "Average Response Time" },
-            { num: "0%", label: "Sent To Landfill" },
-          ].map((stat, i) => (
-            <div key={i}>
-              <div className="font-display font-extrabold text-4xl md:text-5xl">{stat.num}</div>
-              <div className="text-xs md:text-sm uppercase tracking-widest text-white/80 mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
       {/* Services / Features */}
       <section className="py-16 bg-background" id="services">
         <div className="container mx-auto px-6 md:px-12">
