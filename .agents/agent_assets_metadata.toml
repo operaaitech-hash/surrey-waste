@@ -72,6 +72,12 @@ uri = "file://artifacts/surrey-waste/public/images/review-james.png"
 type = "image"
 title = "generated_image"
 
+[[generated]]
+id = "dGflgSFQX1dVl8QAfVLvo"
+uri = "file://artifacts/surrey-waste/public/images/hero-bg.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "-A7xEWu_Qu_FVlGdBuLuT"
 uri = "file://artifacts/surrey-waste/public/images/surrey-logo-mark.png"

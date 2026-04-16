@@ -84,30 +84,15 @@ export default function LandingPage() {
         </div>
       </nav>
       {/* Hero — emerald banner aesthetic */}
-      <section className="relative flex items-center overflow-hidden bg-brand-flow">
-        {/* Glowing light streaks */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/30 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-emerald-400/20 rounded-full blur-[100px]"></div>
-          <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-white/5 rounded-full blur-[80px] -translate-x-1/2 -translate-y-1/2"></div>
-        </div>
-        {/* Light streak SVG */}
-        <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-40" preserveAspectRatio="none" viewBox="0 0 1440 900">
-          <path d="M0,200 Q360,100 720,300 T1440,250" stroke="url(#streak1)" strokeWidth="2" fill="none" />
-          <path d="M0,500 Q360,400 720,600 T1440,550" stroke="url(#streak2)" strokeWidth="1" fill="none" />
-          <defs>
-            <linearGradient id="streak1" x1="0" x2="1">
-              <stop offset="0%" stopColor="white" stopOpacity="0"/>
-              <stop offset="50%" stopColor="white" stopOpacity="0.6"/>
-              <stop offset="100%" stopColor="white" stopOpacity="0"/>
-            </linearGradient>
-            <linearGradient id="streak2" x1="0" x2="1">
-              <stop offset="0%" stopColor="white" stopOpacity="0"/>
-              <stop offset="50%" stopColor="white" stopOpacity="0.4"/>
-              <stop offset="100%" stopColor="white" stopOpacity="0"/>
-            </linearGradient>
-          </defs>
-        </svg>
+      <section className="relative flex items-center overflow-hidden">
+        {/* Banner-style background image */}
+        <img
+          src="/images/hero-bg.png"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/30 via-transparent to-emerald-900/20 pointer-events-none"></div>
 
         <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-32 pb-16">
           <motion.div
