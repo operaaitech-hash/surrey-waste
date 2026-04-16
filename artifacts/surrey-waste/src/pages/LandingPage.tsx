@@ -69,7 +69,7 @@ export default function LandingPage() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background backdrop-blur-md border-b border-border ${isScrolled ? 'py-3 shadow-sm' : 'py-5'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3">
-            <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-12 h-12 object-contain drop-shadow-md" />
+            <img src="/images/surrey-logo.webp" alt="Surrey Waste Logo" className="w-12 h-12 object-contain drop-shadow-md" />
             <span className="font-display font-extrabold text-xl tracking-tight uppercase text-foreground">Surrey Waste</span>
           </a>
           <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-foreground">
@@ -87,7 +87,7 @@ export default function LandingPage() {
       <section className="relative flex items-center overflow-hidden min-h-[600px] lg:min-h-[700px]">
         {/* Banner-style background image */}
         <img
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.webp"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-bottom"
@@ -131,7 +131,7 @@ export default function LandingPage() {
           >
             <div className="absolute inset-0 bg-primary/50 rounded-full blur-[100px] scale-75"></div>
             <img
-              src="/images/surrey-van.png"
+              src="/images/surrey-van.webp"
               alt="Surrey Waste Branded Van"
               className="relative w-full max-w-[560px] md:max-w-[640px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
             />
@@ -266,7 +266,7 @@ export default function LandingPage() {
             >
               <div className="absolute inset-0 bg-primary/25 rounded-full blur-[90px] scale-75"></div>
               <img
-                src="/images/surrey-logo.png"
+                src="/images/surrey-logo.webp"
                 alt="Surrey Waste Castle Emblem"
                 className="relative w-[280px] md:w-[360px] h-auto object-contain drop-shadow-[0_15px_50px_rgba(16,185,129,0.4)]"
               />
@@ -303,19 +303,19 @@ export default function LandingPage() {
               {
                 name: "Mark T.",
                 location: "Guildford",
-                image: "/images/review-mark.png",
+                image: "/images/review-mark.webp",
                 text: "Booked a collection for site clearance. Driver arrived on time, loaded everything himself, and left the site spotless. Will use again.",
               },
               {
                 name: "Sarah L.",
                 location: "Woking",
-                image: "/images/review-sarah.png",
+                image: "/images/review-sarah.webp",
                 text: "Brilliant service from start to finish. Quick quote, easy booking, and the team were professional and friendly. Highly recommended.",
               },
               {
                 name: "James P.",
                 location: "Surrey",
-                image: "/images/review-james.png",
+                image: "/images/review-james.webp",
                 text: "Needed an office strip-out cleared fast. Surrey Waste responded same day and handled it all. Fair price, no fuss.",
               },
             ].map((review, i) => (
@@ -467,7 +467,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
             <div className="md:col-span-2">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-                <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-11 h-11 object-contain" />
+                <img src="/images/surrey-logo.webp" alt="Surrey Waste Logo" className="w-11 h-11 object-contain" />
                 <span className="font-display font-extrabold text-xl tracking-tight uppercase">Surrey Waste</span>
               </div>
               <p className="text-muted-foreground max-w-sm mx-auto md:mx-0">
