@@ -65,7 +65,6 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-white font-sans overflow-x-hidden">
-
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md border-b border-border py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -84,7 +83,6 @@ export default function LandingPage() {
           </Button>
         </div>
       </nav>
-
       {/* Hero — emerald banner aesthetic */}
       <section className="relative flex items-center overflow-hidden bg-brand-flow">
         {/* Glowing light streaks */}
@@ -133,7 +131,7 @@ export default function LandingPage() {
                 <a href="#book">Book Collection <ChevronRight className="ml-1 h-4 w-4" /></a>
               </Button>
               <Button size="lg" variant="outline" className="rounded-full uppercase font-bold tracking-wider text-sm h-14 px-8 border-white/30 bg-white/5 text-white hover:bg-white/15 hover:text-white" asChild>
-                <a href="#how-it-works">How it Works</a>
+                <a href="#how-it-works">How We Work</a>
               </Button>
             </div>
           </motion.div>
@@ -155,7 +153,6 @@ export default function LandingPage() {
         </div>
 
       </section>
-
       {/* Stats strip */}
       <section className="bg-primary text-white py-8 border-y-4 border-emerald-300/30">
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -172,7 +169,6 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
-
       {/* Services / Features */}
       <section className="py-16 bg-background" id="services">
         <div className="container mx-auto px-6 md:px-12">
@@ -213,7 +209,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* How it Works — emerald background */}
       <section className="py-16 relative overflow-hidden bg-brand-flow" id="how-it-works">
         <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-primary/30 rounded-full blur-[120px]"></div>
@@ -255,7 +250,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Why Surrey Waste */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-6 md:px-12">
@@ -310,7 +304,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Environmental */}
       <section className="py-16 bg-background" id="environment">
         <div className="container mx-auto px-6 md:px-12">
@@ -337,7 +330,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Booking Form */}
       <section className="py-16 relative overflow-hidden bg-brand-flow" id="book">
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[120px]"></div>
@@ -411,7 +403,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-background border-t border-border py-10" id="contact">
         <div className="container mx-auto px-6 md:px-12">
