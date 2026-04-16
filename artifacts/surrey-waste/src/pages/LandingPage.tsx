@@ -39,7 +39,7 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero — emerald banner aesthetic */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-[radial-gradient(ellipse_at_top_left,_hsl(140_85%_22%)_0%,_hsl(140_95%_12%)_50%,_hsl(140_100%_6%)_100%)]">
+      <section className="relative flex items-center overflow-hidden bg-[radial-gradient(ellipse_at_top_left,_hsl(140_85%_22%)_0%,_hsl(140_95%_12%)_50%,_hsl(140_100%_6%)_100%)]">
         {/* Glowing light streaks */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/30 rounded-full blur-[120px]"></div>
@@ -64,7 +64,7 @@ export default function LandingPage() {
           </defs>
         </svg>
 
-        <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-24 pb-12">
+        <div className="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-32 pb-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export default function LandingPage() {
             <h1 className="text-5xl md:text-7xl font-display font-extrabold leading-[0.95] tracking-tight uppercase text-balance mb-6 text-white drop-shadow-2xl">
               Surrey<br/>Waste.
             </h1>
-            <p className="text-xl md:text-2xl text-emerald-100/90 font-medium max-w-xl mx-auto lg:mx-0 mb-10">
+            <p className="text-xl md:text-2xl text-emerald-100/90 font-medium max-w-xl mx-auto lg:mx-0 mb-8">
               Waste removal &amp; clearance experts.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -102,7 +102,7 @@ export default function LandingPage() {
             <img
               src="/images/surrey-logo.png"
               alt="Surrey Waste Castle Logo"
-              className="relative w-[340px] md:w-[480px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
+              className="relative w-[280px] md:w-[400px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
             />
           </motion.div>
         </div>
@@ -129,13 +129,13 @@ export default function LandingPage() {
       </section>
 
       {/* Services / Features */}
-      <section className="py-24 bg-background" id="services">
+      <section className="py-16 bg-background" id="services">
         <div className="container mx-auto px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center max-w-2xl mx-auto mb-16"
+            className="text-center max-w-2xl mx-auto mb-8"
           >
             <span className="text-primary font-bold uppercase tracking-widest text-sm">Our Service</span>
             <h2 className="text-4xl md:text-6xl font-display font-extrabold uppercase tracking-tight mt-3">
@@ -170,7 +170,7 @@ export default function LandingPage() {
       </section>
 
       {/* How it Works — emerald background */}
-      <section className="py-24 relative overflow-hidden bg-[radial-gradient(ellipse_at_center,_hsl(140_85%_22%)_0%,_hsl(140_95%_10%)_100%)]" id="how-it-works">
+      <section className="py-16 relative overflow-hidden bg-[radial-gradient(ellipse_at_center,_hsl(140_85%_22%)_0%,_hsl(140_95%_10%)_100%)]" id="how-it-works">
         <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-primary/30 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-emerald-400/20 rounded-full blur-[120px]"></div>
 
@@ -179,7 +179,7 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center max-w-2xl mx-auto mb-16"
+            className="text-center max-w-2xl mx-auto mb-8"
           >
             <span className="text-emerald-300 font-bold uppercase tracking-widest text-sm">The Process</span>
             <h2 className="text-4xl md:text-6xl font-display font-extrabold uppercase tracking-tight mt-3 text-white">
@@ -212,9 +212,9 @@ export default function LandingPage() {
       </section>
 
       {/* Why Surrey Waste */}
-      <section className="py-24 bg-background">
+      <section className="py-16 bg-background">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -259,7 +259,7 @@ export default function LandingPage() {
               <img
                 src="/images/surrey-logo.png"
                 alt="Surrey Waste Castle Emblem"
-                className="relative w-[320px] md:w-[440px] h-auto object-contain drop-shadow-[0_15px_50px_rgba(16,185,129,0.4)]"
+                className="relative w-[280px] md:w-[360px] h-auto object-contain drop-shadow-[0_15px_50px_rgba(16,185,129,0.4)]"
               />
             </motion.div>
           </div>
@@ -267,7 +267,7 @@ export default function LandingPage() {
       </section>
 
       {/* Environmental */}
-      <section className="py-24 bg-secondary" id="environment">
+      <section className="py-16 bg-secondary" id="environment">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
@@ -294,12 +294,12 @@ export default function LandingPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-24 relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(140_85%_25%)_0%,_hsl(140_95%_10%)_100%)]" id="book">
+      <section className="py-16 relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(140_85%_25%)_0%,_hsl(140_95%_10%)_100%)]" id="book">
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[120px]"></div>
 
         <div className="container mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h2 className="text-4xl md:text-6xl font-display font-extrabold uppercase tracking-tight mb-4 text-white">Book Now</h2>
               <p className="text-lg text-emerald-100/90">
                 Or call <span className="font-bold text-white">0800 123 4567</span>
@@ -367,9 +367,9 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-background border-t border-border py-12" id="contact">
+      <footer className="bg-background border-t border-border py-10" id="contact">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10 text-center md:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
             <div className="md:col-span-2">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                 <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-11 h-11 object-contain" />
