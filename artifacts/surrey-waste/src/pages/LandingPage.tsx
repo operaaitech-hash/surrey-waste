@@ -23,7 +23,7 @@ export default function LandingPage() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md border-b border-border py-3 shadow-sm' : 'bg-transparent py-5'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3">
-            <img src="/images/surrey-logo-castle.jpeg" alt="Surrey Waste Logo" className="w-11 h-11 object-cover rounded-full ring-2 ring-primary/20" />
+            <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-12 h-12 object-contain drop-shadow-md" />
             <span className={`font-display font-extrabold text-xl tracking-tight uppercase ${isScrolled ? 'text-foreground' : 'text-white drop-shadow-lg'}`}>Surrey Waste</span>
           </a>
           <div className={`hidden md:flex items-center gap-8 text-sm font-semibold ${isScrolled ? 'text-muted-foreground' : 'text-white/90 drop-shadow'}`}>
@@ -98,11 +98,11 @@ export default function LandingPage() {
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
             className="relative flex justify-center"
           >
-            <div className="absolute inset-0 bg-primary/40 rounded-full blur-[80px] scale-90"></div>
+            <div className="absolute inset-0 bg-primary/50 rounded-full blur-[100px] scale-75"></div>
             <img
-              src="/images/surrey-logo-castle.jpeg"
+              src="/images/surrey-logo.png"
               alt="Surrey Waste Castle Logo"
-              className="relative w-[320px] md:w-[440px] h-auto rounded-full shadow-2xl shadow-emerald-500/50"
+              className="relative w-[340px] md:w-[480px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
             />
           </motion.div>
         </div>
@@ -255,11 +255,11 @@ export default function LandingPage() {
               viewport={{ once: true }}
               className="relative flex justify-center"
             >
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-[80px] scale-75"></div>
+              <div className="absolute inset-0 bg-primary/25 rounded-full blur-[90px] scale-75"></div>
               <img
-                src="/images/surrey-logo-castle.jpeg"
+                src="/images/surrey-logo.png"
                 alt="Surrey Waste Castle Emblem"
-                className="relative w-[300px] md:w-[420px] h-auto rounded-full shadow-2xl shadow-primary/30"
+                className="relative w-[320px] md:w-[440px] h-auto object-contain drop-shadow-[0_15px_50px_rgba(16,185,129,0.4)]"
               />
             </motion.div>
           </div>
@@ -372,7 +372,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10 text-center md:text-left">
             <div className="md:col-span-2">
               <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-                <img src="/images/surrey-logo-castle.jpeg" alt="Surrey Waste Logo" className="w-10 h-10 object-cover rounded-full ring-2 ring-primary/20" />
+                <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-11 h-11 object-contain" />
                 <span className="font-display font-extrabold text-xl tracking-tight uppercase">Surrey Waste</span>
               </div>
               <p className="text-muted-foreground max-w-sm mx-auto md:mx-0">
