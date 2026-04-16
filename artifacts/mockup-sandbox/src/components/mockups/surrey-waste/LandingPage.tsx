@@ -265,7 +265,7 @@ export function LandingPage() {
       </section>
 
       {/* Environmental */}
-      <section className="py-16 bg-secondary" id="environment">
+      <section className="py-16 bg-background" id="environment">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
