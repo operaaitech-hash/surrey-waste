@@ -139,15 +139,8 @@ export default function LandingPage() {
 
       </section>
       {/* Stats strip */}
-      <section className="relative text-white py-8 border-y-4 border-emerald-300/30 overflow-hidden">
-        <img
-          src="/images/hero-bg.png"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-emerald-950/20 pointer-events-none"></div>
-        <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center relative z-10">
+      <section className="bg-primary text-white py-8 border-y-4 border-emerald-300/30">
+        <div className="container mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             { num: "No", label: "Skip Permits Required" },
             { num: "100%", label: "Driver Loads For You" },
