@@ -7,8 +7,54 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { CheckCircle2, ChevronRight, Clock, MapPin, Recycle, ShieldCheck, Truck } from 'lucide-react';
 
+const WASTE_TYPE_LABELS: Record<string, string> = {
+  mixed: 'Mixed Construction Waste',
+  timber: 'Timber & Wood',
+  plasterboard: 'Plasterboard',
+  rubble: 'Hardcore / Rubble',
+  office: 'Office Strip-out',
+};
+
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [form, setForm] = useState({
+    name: '',
+    company: '',
+    phone: '',
+    postcode: '',
+    type: '',
+    notes: '',
+  });
+
+  const updateField = (field: keyof typeof form) => (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => setForm((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const handleQuoteRequest = (e: React.FormEvent) => {
+    e.preventDefault();
+    const wasteLabel = form.type ? WASTE_TYPE_LABELS[form.type] ?? form.type : 'Not specified';
+    const subject = `Quote Request${form.company ? ` from ${form.company}` : ''}`;
+    const lines = [
+      'Hi Surrey Waste,',
+      '',
+      'I would like to request a quote for a waste collection. My details are below:',
+      '',
+      `Name: ${form.name || '-'}`,
+      `Company: ${form.company || '-'}`,
+      `Phone: ${form.phone || '-'}`,
+      `Postcode: ${form.postcode || '-'}`,
+      `Waste Type: ${wasteLabel}`,
+      '',
+      'Notes:',
+      form.notes || '-',
+      '',
+      'Thanks,',
+      form.name || '',
+    ];
+    const body = lines.join('\n');
+    const mailto = `mailto:info@surreywaste.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+  };
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -311,32 +357,32 @@ export default function LandingPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+              <form className="space-y-6" onSubmit={handleQuoteRequest}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Name</Label>
-                    <Input id="name" placeholder="John Doe" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
+                    <Input id="name" value={form.name} onChange={updateField('name')} placeholder="John Doe" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="company" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Company</Label>
-                    <Input id="company" placeholder="Acme Construction" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
+                    <Input id="company" value={form.company} onChange={updateField('company')} placeholder="Acme Construction" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="phone" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="07700 900000" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
+                    <Input id="phone" type="tel" value={form.phone} onChange={updateField('phone')} placeholder="07700 900000" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="postcode" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Postcode</Label>
-                    <Input id="postcode" placeholder="GU1 1AA" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
+                    <Input id="postcode" value={form.postcode} onChange={updateField('postcode')} placeholder="GU1 1AA" className="h-12 rounded-xl border-border focus-visible:ring-primary" />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="type" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Waste Type</Label>
-                  <Select>
+                  <Select value={form.type} onValueChange={(value) => setForm((prev) => ({ ...prev, type: value }))}>
                     <SelectTrigger className="h-12 rounded-xl border-border focus:ring-primary">
                       <SelectValue placeholder="Select type" />
                     </SelectTrigger>
@@ -352,7 +398,7 @@ export default function LandingPage() {
 
                 <div className="space-y-2">
                   <Label htmlFor="notes" className="text-xs uppercase font-bold tracking-wider text-muted-foreground">Notes</Label>
-                  <Textarea id="notes" placeholder="Site access, parking, special instructions..." className="min-h-[100px] rounded-xl border-border focus-visible:ring-primary resize-none" />
+                  <Textarea id="notes" value={form.notes} onChange={updateField('notes')} placeholder="Site access, parking, special instructions..." className="min-h-[100px] rounded-xl border-border focus-visible:ring-primary resize-none" />
                 </div>
 
                 <Button type="submit" size="lg" className="w-full h-14 rounded-full uppercase font-bold tracking-wider text-sm shadow-lg shadow-primary/30">
