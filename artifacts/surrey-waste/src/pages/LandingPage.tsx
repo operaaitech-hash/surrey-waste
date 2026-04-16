@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { CheckCircle2, ChevronRight, Clock, MapPin, Recycle, ShieldCheck, Truck } from 'lucide-react';
+import { CheckCircle2, ChevronRight, Clock, MapPin, Quote, Recycle, ShieldCheck, Star, Truck } from 'lucide-react';
 
 const WASTE_TYPE_LABELS: Record<string, string> = {
   mixed: 'Mixed Construction Waste',
@@ -304,6 +304,89 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Reviews */}
+      <section className="py-16 bg-secondary/40" id="reviews">
+        <div className="container mx-auto px-6 md:px-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center max-w-2xl mx-auto mb-10"
+          >
+            <span className="text-primary font-bold uppercase tracking-widest text-sm">Trusted by Trade</span>
+            <h2 className="text-4xl md:text-6xl font-display font-extrabold uppercase tracking-tight mt-3">
+              What Clients Say.
+            </h2>
+            <div className="flex items-center justify-center gap-2 mt-4">
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                ))}
+              </div>
+              <span className="text-sm font-bold text-muted-foreground uppercase tracking-wider ml-2">Verified on Checkatrade</span>
+            </div>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                name: "Mark T.",
+                location: "Guildford",
+                text: "Booked a collection for site clearance. Driver arrived on time, loaded everything himself, and left the site spotless. Will use again.",
+              },
+              {
+                name: "Sarah L.",
+                location: "Woking",
+                text: "Brilliant service from start to finish. Quick quote, easy booking, and the team were professional and friendly. Highly recommended.",
+              },
+              {
+                name: "James P.",
+                location: "Surrey",
+                text: "Needed an office strip-out cleared fast. Surrey Waste responded same day and handled it all. Fair price, no fuss.",
+              },
+            ].map((review, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-lg hover:shadow-primary/10 transition-all relative"
+              >
+                <Quote className="w-10 h-10 text-primary/20 absolute top-6 right-6" />
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} className="w-4 h-4 fill-primary text-primary" />
+                  ))}
+                </div>
+                <p className="text-foreground leading-relaxed mb-6">"{review.text}"</p>
+                <div className="flex items-center gap-3 pt-4 border-t border-border">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary text-sm">
+                    {review.name.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm">{review.name}</div>
+                    <div className="text-xs text-muted-foreground">{review.location}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <a
+              href="https://www.checkatrade.com/trades/surreywaste"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline uppercase tracking-wider"
+            >
+              Read all reviews on Checkatrade <ChevronRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Environmental */}
       <section className="py-16 bg-background" id="environment">
         <div className="container mx-auto px-6 md:px-12">
