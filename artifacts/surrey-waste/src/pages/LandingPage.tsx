@@ -66,13 +66,13 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-white font-sans overflow-x-hidden">
       {/* Navigation */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md border-b border-border py-3 shadow-sm' : 'bg-transparent py-5'}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background backdrop-blur-md border-b border-border ${isScrolled ? 'py-3 shadow-sm' : 'py-5'}`}>
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3">
             <img src="/images/surrey-logo.png" alt="Surrey Waste Logo" className="w-12 h-12 object-contain drop-shadow-md" />
-            <span className={`font-display font-extrabold text-xl tracking-tight uppercase ${isScrolled ? 'text-foreground' : 'text-white drop-shadow-lg'}`}>Surrey Waste</span>
+            <span className="font-display font-extrabold text-xl tracking-tight uppercase text-foreground">Surrey Waste</span>
           </a>
-          <div className={`hidden md:flex items-center gap-8 text-sm font-semibold ${isScrolled ? 'text-muted-foreground' : 'text-white/90 drop-shadow'}`}>
+          <div className="hidden md:flex items-center gap-8 text-sm font-semibold text-muted-foreground">
             <a href="#services" className="hover:text-primary transition-colors">Services</a>
             <a href="#how-it-works" className="hover:text-primary transition-colors">How it Works</a>
             <a href="#environment" className="hover:text-primary transition-colors">Recycling</a>
