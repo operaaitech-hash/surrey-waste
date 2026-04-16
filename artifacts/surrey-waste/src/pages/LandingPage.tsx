@@ -333,16 +333,19 @@ export default function LandingPage() {
               {
                 name: "Mark T.",
                 location: "Guildford",
+                image: "/images/review-mark.png",
                 text: "Booked a collection for site clearance. Driver arrived on time, loaded everything himself, and left the site spotless. Will use again.",
               },
               {
                 name: "Sarah L.",
                 location: "Woking",
+                image: "/images/review-sarah.png",
                 text: "Brilliant service from start to finish. Quick quote, easy booking, and the team were professional and friendly. Highly recommended.",
               },
               {
                 name: "James P.",
                 location: "Surrey",
+                image: "/images/review-james.png",
                 text: "Needed an office strip-out cleared fast. Surrey Waste responded same day and handled it all. Fair price, no fuss.",
               },
             ].map((review, i) => (
@@ -362,9 +365,11 @@ export default function LandingPage() {
                 </div>
                 <p className="text-foreground leading-relaxed mb-6">"{review.text}"</p>
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center font-bold text-primary text-sm">
-                    {review.name.charAt(0)}
-                  </div>
+                  <img
+                    src={review.image}
+                    alt={review.name}
+                    className="w-11 h-11 rounded-full object-cover ring-2 ring-primary/20"
+                  />
                   <div>
                     <div className="font-bold text-sm">{review.name}</div>
                     <div className="text-xs text-muted-foreground">{review.location}</div>

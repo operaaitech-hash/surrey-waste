@@ -54,6 +54,24 @@ uri = "file://artifacts/surrey-waste/public/images/surrey-logo-mark.png"
 type = "image"
 title = "surrey waste logo mark"
 
+[[generated]]
+id = "O-QOKG9rU8qcLZWc1gXO2"
+uri = "file://artifacts/surrey-waste/public/images/review-mark.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "OO5HC2xmXybkhwQe0k2Wc"
+uri = "file://artifacts/surrey-waste/public/images/review-sarah.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "-lMBBVnqMjls-r7m2zkM5"
+uri = "file://artifacts/surrey-waste/public/images/review-james.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "-A7xEWu_Qu_FVlGdBuLuT"
 uri = "file://artifacts/surrey-waste/public/images/surrey-logo-mark.png"
