@@ -96,15 +96,15 @@
 
   --sidebar-border: 0 0% 88%;
 
-  --sidebar-primary: 142 76% 33%;   /* forest green */
+  --sidebar-primary: 140 88% 35%;   /* vivid emerald */
 
   --sidebar-primary-foreground: 0 0% 100%;
 
-  --sidebar-accent: 142 40% 96%;
+  --sidebar-accent: 140 50% 96%;
 
-  --sidebar-accent-foreground: 142 76% 25%;
+  --sidebar-accent-foreground: 140 88% 22%;
 
-  --sidebar-ring: 142 76% 33%;
+  --sidebar-ring: 140 88% 35%;
 
   --popover: 0 0% 100%;
 
@@ -112,7 +112,7 @@
 
   --popover-border: 0 0% 88%;
 
-  --primary: 142 76% 33%;           /* forest green #16a34a */
+  --primary: 140 88% 35%;           /* vivid emerald to match brand banner */
 
   --primary-foreground: 0 0% 100%;  /* white text on green */
 
@@ -124,21 +124,21 @@
 
   --muted-foreground: 0 0% 45%;
 
-  --accent: 142 40% 96%;            /* very light green tint */
+  --accent: 140 50% 96%;            /* very light emerald tint */
 
-  --accent-foreground: 142 76% 25%;
+  --accent-foreground: 140 88% 22%;
 
   --destructive: 0 84% 60%;
 
   --destructive-foreground: 0 0% 100%;
 
   --input: 0 0% 88%;
-  --ring: 142 76% 33%;
-  --chart-1: 142 76% 33%;
-  --chart-2: 142 60% 45%;
-  --chart-3: 142 50% 55%;
-  --chart-4: 142 40% 65%;
-  --chart-5: 142 30% 75%;
+  --ring: 140 88% 35%;
+  --chart-1: 140 88% 35%;
+  --chart-2: 140 75% 45%;
+  --chart-3: 140 65% 55%;
+  --chart-4: 140 55% 65%;
+  --chart-5: 140 45% 75%;
 
   --app-font-sans: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
   --app-font-serif: Georgia, serif;
