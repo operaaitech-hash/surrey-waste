@@ -84,7 +84,7 @@ export default function LandingPage() {
         </div>
       </nav>
       {/* Hero — emerald banner aesthetic */}
-      <section className="relative flex items-center overflow-hidden">
+      <section className="relative flex items-center overflow-hidden min-h-[800px] lg:min-h-screen">
         {/* Banner-style background image */}
         <img
           src="/images/hero-bg.png"
