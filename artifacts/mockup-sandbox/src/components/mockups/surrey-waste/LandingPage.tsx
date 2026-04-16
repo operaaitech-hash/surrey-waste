@@ -39,7 +39,7 @@ export function LandingPage() {
       </nav>
 
       {/* Hero — emerald banner aesthetic */}
-      <section className="relative flex items-center overflow-hidden bg-[radial-gradient(ellipse_at_top_left,_hsl(140_85%_22%)_0%,_hsl(140_95%_12%)_50%,_hsl(140_100%_6%)_100%)]">
+      <section className="relative flex items-center overflow-hidden bg-brand-flow">
         {/* Glowing light streaks */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary/30 rounded-full blur-[120px]"></div>
@@ -107,8 +107,6 @@ export function LandingPage() {
           </motion.div>
         </div>
 
-        {/* Bottom fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent z-10"></div>
       </section>
 
       {/* Stats strip */}
@@ -170,7 +168,7 @@ export function LandingPage() {
       </section>
 
       {/* How it Works — emerald background */}
-      <section className="py-16 relative overflow-hidden bg-[radial-gradient(ellipse_at_center,_hsl(140_85%_22%)_0%,_hsl(140_95%_10%)_100%)]" id="how-it-works">
+      <section className="py-16 relative overflow-hidden bg-brand-flow" id="how-it-works">
         <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-primary/30 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-emerald-400/20 rounded-full blur-[120px]"></div>
 
@@ -294,7 +292,7 @@ export function LandingPage() {
       </section>
 
       {/* Booking Form */}
-      <section className="py-16 relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_hsl(140_85%_25%)_0%,_hsl(140_95%_10%)_100%)]" id="book">
+      <section className="py-16 relative overflow-hidden bg-brand-flow" id="book">
         <div className="absolute top-0 left-1/3 w-[500px] h-[500px] bg-primary/30 rounded-full blur-[120px]"></div>
 
         <div className="container mx-auto px-6 md:px-12 relative z-10">
