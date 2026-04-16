@@ -302,7 +302,7 @@ export default function LandingPage() {
             <div className="text-center mb-8">
               <h2 className="text-4xl md:text-6xl font-display font-extrabold uppercase tracking-tight mb-4 text-white">Book Now</h2>
               <p className="text-lg text-emerald-100/90">
-                Or call <span className="font-bold text-white">0800 123 4567</span>
+                Or call <span className="font-bold text-white">07874 271317</span>
               </p>
             </div>
 
@@ -391,7 +391,7 @@ export default function LandingPage() {
             <div>
               <h4 className="font-bold uppercase tracking-wider text-xs mb-4">Contact</h4>
               <ul className="space-y-2 text-muted-foreground text-sm">
-                <li>0800 123 4567</li>
+                <li>07874 271317</li>
                 <li>info@surreywaste.com</li>
                 <li><a href="https://www.surreywaste.com" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">www.surreywaste.com</a></li>
                 <li>Surrey, GU1 1AA</li>
