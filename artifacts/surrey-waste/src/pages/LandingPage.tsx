@@ -131,9 +131,9 @@ export default function LandingPage() {
           >
             <div className="absolute inset-0 bg-primary/50 rounded-full blur-[100px] scale-75"></div>
             <img
-              src="/images/surrey-logo.png"
-              alt="Surrey Waste Castle Logo"
-              className="relative w-[280px] md:w-[400px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
+              src="/images/surrey-van.png"
+              alt="Surrey Waste Branded Van"
+              className="relative w-full max-w-[560px] md:max-w-[640px] h-auto object-contain drop-shadow-[0_20px_60px_rgba(16,185,129,0.6)]"
             />
           </motion.div>
         </div>
