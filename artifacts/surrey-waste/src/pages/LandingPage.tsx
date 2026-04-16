@@ -84,13 +84,13 @@ export default function LandingPage() {
         </div>
       </nav>
       {/* Hero — emerald banner aesthetic */}
-      <section className="relative flex items-center overflow-hidden min-h-[800px] lg:min-h-screen">
+      <section className="relative flex items-center overflow-hidden min-h-[600px] lg:min-h-[700px]">
         {/* Banner-style background image */}
         <img
           src="/images/hero-bg.png"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-bottom"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/30 via-transparent to-emerald-900/20 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-background pointer-events-none"></div>
