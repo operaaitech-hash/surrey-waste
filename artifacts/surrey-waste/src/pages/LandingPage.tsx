@@ -13,6 +13,7 @@ const WASTE_TYPE_LABELS: Record<string, string> = {
   plasterboard: 'Plasterboard',
   rubble: 'Hardcore / Rubble',
   office: 'Office Strip-out',
+  other: 'Other',
 };
 
 export default function LandingPage() {
@@ -392,6 +393,7 @@ export default function LandingPage() {
                       <SelectItem value="plasterboard">Plasterboard</SelectItem>
                       <SelectItem value="rubble">Hardcore / Rubble</SelectItem>
                       <SelectItem value="office">Office Strip-out</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
